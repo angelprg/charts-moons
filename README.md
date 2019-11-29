@@ -2,6 +2,7 @@
 Instrucciones para visualizar el proyecto:
 ```sh
 $ git clone https://github.com/angelprg/charts-moons.git
+$ cd charts-moons
 $ npm install
 $ npm start
 ```
