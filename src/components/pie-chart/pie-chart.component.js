@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import "./pie-chart.styles.scss";
 
 const PieChart = dataSet => {
   // Para dar formato a los números
@@ -11,7 +12,7 @@ const PieChart = dataSet => {
   var node = document.createElement("div");
 
   // tamaño y márgenes
-  var margin_base = 10;
+  var margin_base = 0;
   var size_base = 200;
   var margin = {
       top: margin_base,
@@ -29,8 +30,8 @@ const PieChart = dataSet => {
   // Propiedades de los arcos
   var arc2 = d3
     .arc()
-    .outerRadius(radius * 0.9)
-    .innerRadius(radius * 0.8);
+    .outerRadius(radius * 1)
+    .innerRadius(radius * 0.9);
 
   var pie = d3
     .pie()
@@ -68,7 +69,7 @@ const PieChart = dataSet => {
     .append("text")
     .attr("text-anchor", "middle")
     .attr("class", "texto_central")
-    .attr("transform", "translate(0, -10)")
+    .attr("transform", "translate(0, -15)")
     .text(dataSet.title);
 
   svg

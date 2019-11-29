@@ -1,0 +1,29 @@
+$gris : #b1b1b1;
+
+.table-compare {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 50%;
+  font-size: 20px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 350px;
+  border-bottom: 2px solid $gris;
+
+  .title-compare {
+    font-weight: bolder;
+  }
+
+  .left-compare {
+    text-align: left;
+  }
+
+  .right-compare {
+    text-align: right;
+  }
+
+  .content-compare-qty {
+    color: $gris;
+    margin-left: 10px;
+  }
+}

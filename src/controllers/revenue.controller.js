@@ -1,17 +1,13 @@
-import React, { useState } from "react";
-import retriveData from "./../models/chart-model";
-import RevenueView from "../views/revenue/revenue.component";
-import PieChart from "../components/pie-chart/pie-chart.component";
+import React from "react";
+import retriveData from "./../models/chart-model.js";
+import VersusChart from "../views/versus-chart/versus-chart.view.js";
 
 const RevenueController = () => {
+  // En el controlador se obtienen los datos del modelo, y de ser necesario se
+  // transforman, filtran o se pueden usar para motrar controles , por ejemplo
+  // radio checkboxes para mostrar u ocultar cierta información
   const dataSet = retriveData("revenue");
-  //PieChart(dataSet);
-  console.log(dataSet);
-  return (
-    <div>
-      <RevenueView />
-    </div>
-  );
+  return <VersusChart dataSet={dataSet} title={"Revenue"} />;
 };
 
 export default RevenueController;

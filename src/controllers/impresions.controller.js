@@ -1,17 +1,13 @@
 import React from "react";
-import retriveData from "./../models/chart-model";
-import ImpresionsView from "../views/impresions/impresions.component";
-import PieChart from "./pie-chart.controller";
+import retriveData from "./../models/chart-model.js";
+import VersusChart from "../views/versus-chart/versus-chart.view.js";
 
 const ImpresionsController = () => {
+  // En el controlador se obtienen los datos del modelo, y de ser necesario se
+  // transforman, filtran o se pueden usar para motrar controles , por ejemplo
+  // radio checkboxes para mostrar u ocultar cierta información
   const dataSet = retriveData("impresions");
-  //PieChart(dataSet);
-  //console.log(dataSet);
-  return (
-    <div>
-      <ImpresionsView />;
-    </div>
-  );
+  return <VersusChart dataSet={dataSet} title={"Impresions"} />;
 };
 
 export default ImpresionsController;

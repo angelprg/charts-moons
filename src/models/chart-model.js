@@ -3,7 +3,7 @@
 const data = {
   revenue: {
     title: "Revenue",
-    colors: ["#85d042", "#36660d"],
+    colors: ["#36660d", "#85d042"],
     dataType: "currency",
     data: [
       { model: "Smartphone", qty: 80000 },
@@ -12,7 +12,7 @@ const data = {
   },
   impresions: {
     title: "Impresions",
-    colors: ["#72c3e6", "#6dc9e3"],
+    colors: ["#324e62", "#72c3e6"],
     dataType: "decimal",
     data: [
       { model: "Smartphone", qty: 30000000 },

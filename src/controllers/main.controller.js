@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "../views/home/home.component.js";
-
+import Home from "../views/home-view/home.view.js";
 import RevenueController from "./revenue.controller.js";
 import ImpresionsController from "./impresions.controller.js";
 import VisitsController from "./visits.controller.js";
